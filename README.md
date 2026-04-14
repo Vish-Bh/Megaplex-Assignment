@@ -93,6 +93,13 @@ Megaplex-Assignment/
 ```
 
 ---
+## Screenshots
+<img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/33c6596f-8ac2-4c3e-af16-14a9b54000df" />
+<img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/692440a8-07f7-42e2-ba16-da5a09e658fd" />
+<img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/2b19cf85-1ac5-49e1-92a7-0716c819cf98" />
+<img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/fab1c283-c50e-468c-9ec0-8eb42e1523d7" />
+
+---
 
 ## ⚙️ Local Setup
 
