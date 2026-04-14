@@ -2,7 +2,7 @@ export const handleSaveToBackend = async (updatedContent) => {
   try {
     const token = localStorage.getItem("token");
 
-    const res = await fetch("http://localhost:5000/api/content/save", {
+    const res = await fetch(`${API}/api/content/save`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -15,7 +15,7 @@ export const handleSaveToBackend = async (updatedContent) => {
 
     console.log("SAVE RESPONSE:", data);
 
-    return data; // ✅ VERY IMPORTANT
+    return data; 
   } catch (err) {
     console.log(err);
     return { success: false };

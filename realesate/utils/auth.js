@@ -4,7 +4,7 @@ export const verifyToken = async () => {
   if (!token) return false;
 
   try {
-    const res = await fetch("http://localhost:5000/api/admin/dashboard", {
+    const res = await fetch(`${API}/api/admin/dashboard`, {
       headers: {
         Authorization: `Bearer ${token}`,
       },

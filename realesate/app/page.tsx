@@ -1,6 +1,6 @@
 'use client'
 import { useEffect, useState } from "react";
-
+const API = process.env.NEXT_PUBLIC_API_URL;
 import Navbar from "@/components/Navbar";
 import HeroSection from "@/components/HeroSection";
 import OverviewSection from "@/components/OverviewSection";
@@ -27,7 +27,7 @@ export default function Page() {
   useEffect(() => {
     const loadContent = async () => {
       try {
-        const res = await fetch("http://localhost:5000/api/content");
+        const res = await fetch(`${API}/api/content`);
         const data = await res.json();
 
         // backend returns empty object OR null → fallback
@@ -48,7 +48,7 @@ export default function Page() {
   // ✅ Handle login properly
   const handleLogin = async (email, password) => {
     try {
-      const res = await fetch("http://localhost:5000/api/admin/login", {
+      const res = await fetch(`${API}/api/admin/login`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
