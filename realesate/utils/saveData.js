@@ -3,7 +3,7 @@ export const handleSaveToBackend = async (updatedContent) => {
   try {
     const token = localStorage.getItem("token");
 
-    const res = await fetch(`https://megaplex-assignment-mtl4.onrender.com//api/content/save`, {
+    const res = await fetch(`https://megaplex-assignment-mtl4.onrender.com/api/content/save`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

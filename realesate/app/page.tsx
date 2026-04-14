@@ -27,7 +27,7 @@ export default function Page() {
   useEffect(() => {
     const loadContent = async () => {
       try {
-        const res = await fetch(`https://megaplex-assignment-mtl4.onrender.com//api/content`);
+        const res = await fetch(`https://megaplex-assignment-mtl4.onrender.com/api/content`);
         const data = await res.json();
 
         // backend returns empty object OR null → fallback
