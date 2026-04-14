@@ -1,3 +1,4 @@
+const API = process.env.NEXT_PUBLIC_API_URL;
 export const handleSaveToBackend = async (updatedContent) => {
   try {
     const token = localStorage.getItem("token");

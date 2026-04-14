@@ -1,3 +1,4 @@
+const API = process.env.NEXT_PUBLIC_API_URL;
 export const verifyToken = async () => {
   const token = localStorage.getItem("token");
 
