@@ -46,7 +46,7 @@ export default function Page() {
 
 
   // ✅ Handle login properly
-  const handleLogin = async (email, password) => {
+  const handleLogin = async (email:any, password:any) => {
     try {
       const res = await fetch(`${API}/api/admin/login`, {
         method: "POST",
@@ -102,7 +102,7 @@ export default function Page() {
             alert("Reset failed");
           }
         }}
-        onSave={async (updatedContent) => {
+        onSave={async (updatedContent:any) => {
           try {
             const res = await handleSaveToBackend(updatedContent);
 
