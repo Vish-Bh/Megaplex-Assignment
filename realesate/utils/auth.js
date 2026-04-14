@@ -5,7 +5,7 @@ export const verifyToken = async () => {
   if (!token) return false;
 
   try {
-    const res = await fetch(`${API}/api/admin/dashboard`, {
+    const res = await fetch(`https://megaplex-assignment-mtl4.onrender.com//api/admin/dashboard`, {
       headers: {
         Authorization: `Bearer ${token}`,
       },

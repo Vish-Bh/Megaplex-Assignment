@@ -27,7 +27,7 @@ export default function Page() {
   useEffect(() => {
     const loadContent = async () => {
       try {
-        const res = await fetch(`${API}/api/content`);
+        const res = await fetch(`https://megaplex-assignment-mtl4.onrender.com//api/content`);
         const data = await res.json();
 
         // backend returns empty object OR null → fallback
@@ -48,7 +48,7 @@ export default function Page() {
   // ✅ Handle login properly
   const handleLogin = async (email:any, password:any) => {
     try {
-      const res = await fetch(`${API}/api/admin/login`, {
+      const res = await fetch(`https://megaplex-assignment-mtl4.onrender.com//api/admin/login`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
