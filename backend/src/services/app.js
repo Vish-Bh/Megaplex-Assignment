@@ -17,7 +17,7 @@ connectDB();
 // middleware
 app.use(
   cors({
-    origin: "http://localhost:3000",
+    origin: "https://megaplex-assignment-1z6c-ra061k0wu-vish-bhs-projects.vercel.app",
     credentials: true,
   })
 );
